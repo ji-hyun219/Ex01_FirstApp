@@ -3,38 +3,83 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    func play() {
+        print("play func")
+    }
+    
     var body: some View {
         VStack {
-            //가로든 세로든 이미지가 큰 쪽이 테두리에 닿으면 크기가 정해짐.
-            Image("waterfall")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            
+            Button(action: {
+                print("Clicked")
+            }) {
+                Text("Button")
+                    .padding()
+                    .background(Color.purple)
+                    .foregroundColor(.white)
+                    .font(.title)
+            }
             
             Divider()
             
-            Image("waterfall2")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 250.0, height: 250.0, alignment: .top)
-            
-            Image(systemName: "play.circle")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .foregroundColor(Color.red)
+            Button(action: {
+                print("Clicked")
+            }) {
+                Text("Button")
+                    .foregroundColor(.purple)
+                    .font(.title)
+                    .padding()
+                    .border(Color.purple, width: 5)
+            }
             
             Divider()
             
-            Text("WaterFall")
-                .background( Image("waterfall")
-                                .resizable()
-                                .frame(width: 200, height: 200, alignment: .center) )
-                .frame(width: 200, height: 200, alignment: .center)
+            Button(action: {
+                print("Play Clicked")
+                self.play() //함수호출
+            }) {
+                Image(systemName: "play.circle")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
+            }
+            
+            Divider()
+            
+            Button(action: {
+                print("Play Clicked")
+            }) {
+                HStack {
+                    Image(systemName: "play.circle")
+                        .font(.title)
+                    Text("Play")
+                        .fontWeight(.semibold)
+                        .font(.title)
+                }
+                .padding()
                 .foregroundColor(.white)
-                .clipShape(Circle())
-                .shadow( radius: 10 )
-                .overlay(Circle().stroke(Color.red, lineWidth: 5))
-                
+                .background(Color.red)
+                .ignoresSafeArea()
+                .cornerRadius(40)
+            }
             
+            Divider()
+            
+            Button(action: {
+                print("Play Clicked")
+            }) {
+                HStack {
+                    Image(systemName: "play.circle")
+                        .font(.title)
+                    Text("Play")
+                        .fontWeight(.semibold)
+                        .font(.title)
+                }
+                .padding()
+                .foregroundColor(.white)
+                .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.yellow]), startPoint: .leading, endPoint: .trailing))
+                .cornerRadius(40)
+            }
         }
         
     }
