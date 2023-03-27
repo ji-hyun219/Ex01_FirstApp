@@ -18,12 +18,17 @@ struct ContentView: View {
     
     // some 예약어: View 프로토콜을 준수하는 모든 뷰에 대한 불투명(관용적인) 타입 허용
     var body: some View {
-        Text("Hello, swiftUI!")
-            .padding(/*@START_MENU_TOKEN@*/.all, 30.0/*@END_MENU_TOKEN@*/)
-            // 배경 색상
+        Text("스위프트 UI 입니다! 스위프트 UI 입니다! 스위프트 UI 입니다! 스위프트 UI 입니다!")
+            .fontWeight(.bold)
+            .multilineTextAlignment(.trailing)
+            .padding(.all, 30.0).font(.system(size: 28))
+        // 배경 색상
+            .frame(width: 300.0, height: 300.0)
             .background(colorScheme == .light ? Color.white : Color.black)
-            // 콘텐츠 색상
+        // 콘텐츠 색상
             .foregroundColor(colorScheme == .light ? Color.black : Color.white)
+            .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+            .border(Color.purple, width: 5)
             
             
     }
@@ -37,13 +42,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView().environment(\.colorScheme, .light)
             // 다크 모드
             ContentView().environment(\.colorScheme, .dark)
-            ContentView()
-                .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
-                .previewDisplayName("iPhone 12")
-
-            ContentView()
-                .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
-                .previewDisplayName("iPhone 12 Pro Max")
+          
         }
     }
 }
