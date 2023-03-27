@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// 프로그램 시작점 - 엔트리 포인트
 @main
 struct Ex01_FirstAppApp: App {
     var body: some Scene {
