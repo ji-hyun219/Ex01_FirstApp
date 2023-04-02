@@ -3,10 +3,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var sharedData: String = "init value"
+  @ObservedObject var myTimer = MyTimer()
     
     var body: some View {
-        Text("Hello Jihyun!").padding()
+        Text("Timer: \(myTimer.value)").font(.largeTitle)
     }
 }
 
