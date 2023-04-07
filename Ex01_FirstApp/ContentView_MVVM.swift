@@ -24,7 +24,7 @@ class ContentViewModel: ObservableObject {
 
 
 // View
-struct ContentView2: View {
+struct ContentViewMVVM: View {
     @ObservedObject var contentViewModel = ContentViewModel()
     
     var body: some View {
@@ -42,8 +42,8 @@ struct ContentView2: View {
     }
 }
 
-struct ContentView2_Previews: PreviewProvider {
+struct ContentViewMVVM_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView2()
+        ContentViewMVVM()
     }
 }

@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentViewMyTimer: View {
   @ObservedObject var myTimer = MyTimer()
     
     var body: some View {
@@ -10,8 +10,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentViewMyTimer_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentViewMyTimer()
     }
 }

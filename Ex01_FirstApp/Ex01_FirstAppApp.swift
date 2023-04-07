@@ -13,7 +13,7 @@ import SwiftUI
 struct Ex01_FirstAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView2()
+            ContentViewMVVM()
         }
     }
 }
