@@ -15,6 +15,7 @@
 		43A472ED29E03319007064CF /* ContentView_MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A472EC29E03319007064CF /* ContentView_MVVM.swift */; };
 		43A472EF29E03A79007064CF /* ContentView_StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A472EE29E03A79007064CF /* ContentView_StateObject.swift */; };
 		43A4730B29E19BA1007064CF /* ContentView_Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A4730A29E19BA1007064CF /* ContentView_Environment.swift */; };
+		43A4730D29E1A89A007064CF /* ContentView_AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A4730C29E1A89A007064CF /* ContentView_AppStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		43A472EC29E03319007064CF /* ContentView_MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_MVVM.swift; sourceTree = "<group>"; };
 		43A472EE29E03A79007064CF /* ContentView_StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_StateObject.swift; sourceTree = "<group>"; };
 		43A4730A29E19BA1007064CF /* ContentView_Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_Environment.swift; sourceTree = "<group>"; };
+		43A4730C29E1A89A007064CF /* ContentView_AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_AppStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				43A472EC29E03319007064CF /* ContentView_MVVM.swift */,
 				43A472EE29E03A79007064CF /* ContentView_StateObject.swift */,
 				43A4730A29E19BA1007064CF /* ContentView_Environment.swift */,
+				43A4730C29E1A89A007064CF /* ContentView_AppStorage.swift */,
 				431F57B129D91F7B001EAED4 /* MyTimer.swift */,
 				4338925D29D1B3F7008A2425 /* Assets.xcassets */,
 				4338925F29D1B3F7008A2425 /* Preview Content */,
@@ -151,6 +154,7 @@
 			files = (
 				43A472EF29E03A79007064CF /* ContentView_StateObject.swift in Sources */,
 				4338925C29D1B3F6008A2425 /* ContentView_MyTimer.swift in Sources */,
+				43A4730D29E1A89A007064CF /* ContentView_AppStorage.swift in Sources */,
 				43A4730B29E19BA1007064CF /* ContentView_Environment.swift in Sources */,
 				43A472ED29E03319007064CF /* ContentView_MVVM.swift in Sources */,
 				431F57B229D91F7B001EAED4 /* MyTimer.swift in Sources */,
